@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://withnotable.github.io/justin-hart-site/sitemap.xml

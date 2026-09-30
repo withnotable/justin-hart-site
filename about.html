@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Justin Hart | Seabolt Real Estate</title>
+    <meta name="description" content="Justin Hart, Associate Broker at Seabolt Real Estate. 13 years selling Historic Savannah, Ardsley Park, Starland, and Tybee. Designer's eye on renovation and investment.">
+    <meta property="og:title" content="About Justin Hart | Seabolt Real Estate">
+    <meta property="og:description" content="Justin Hart, Associate Broker at Seabolt Real Estate. 13 years selling Historic Savannah, Ardsley Park, Starland, and Tybee. Designer's eye on renovation and investment.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "RealEstateAgent", "name": "Justin Hart", "image": "https://example.com/justin-hart.jpg", "telephone": "323.236.3715", "email": "justin@justinhart.com", "areaServed": [{"@type": "AdministrativeArea", "name": "Savannah, GA"}, {"@type": "AdministrativeArea", "name": "Historic Landmark District, Savannah, GA"}, {"@type": "AdministrativeArea", "name": "Ardsley Park, Savannah, GA"}, {"@type": "AdministrativeArea", "name": "Starland, Savannah, GA"}, {"@type": "AdministrativeArea", "name": "Tybee Island, GA"}], "jobTitle": "Associate Broker", "worksFor": {"@type": "Organization", "name": "Seabolt Real Estate", "url": "https://seaboltrealestate.com"}, "url": "https://justinhart.com", "sameAs": ["https://www.zillow.com/profile/hartjustin"], "knowsAbout": ["Historic homes", "Home renovation", "Investment properties", "Short-term rentals", "Real estate market analysis"], "yearsOfExperience": 13}
+    </script>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="./" class="nav-brand">Justin Hart <span>·</span> Realtor</a>
+            <ul class="nav-links">
+                <li><a href="./">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="./#neighborhoods">Neighborhoods</a></li>
+                <li><a href="blog">Blog</a></li>
+                <li><a href="https://seaboltrealestate.com/2020/01/justin-hart/" target="_blank" rel="noopener noreferrer" class="nav-listings">View Listings</a></li>
+                <li><a href="contact" class="nav-cta">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <div class="article-header">
+        <div class="article-header-inner">
+            <div class="meta-line"><span class="blog-card-category">About</span></div>
+            <h1>About Justin Hart</h1>
+            <p class="article-lede">Savannah real estate, seen through a designer's eye.</p>
+        </div>
+    </div>
+    <div class="article-body"><p>Justin Hart is an Associate Broker with Seabolt Real Estate in Savannah, Georgia, specializing in the Historic District and the neighborhoods stretching south of it. Before real estate, Justin built a career in high-end renovation and construction management, overseeing complex projects in Los Angeles, New York, and later with a builder in Bluffton, South Carolina. That hands-on background is something most agents simply don't bring to the table.</p><p>When Justin walks through a property, he sees it differently — what it needs, what it doesn't, and what buyers will actually pay for the updates a seller is considering. Whether you're buying a century-old rowhouse in the Historic District or selling a bungalow in Ardsley Park, that design and construction fluency translates into sharper pricing, smarter negotiations, and fewer surprises at inspection.</p><p>Justin has been selling Savannah real estate since 2010, the year he made the city his permanent home. He lives in Ardsley Park — one of Savannah's beloved early-20th-century neighborhoods — and has the kind of street-level knowledge of the market that only comes from spending over a decade genuinely embedded in a place. Originally from Memphis, he brings a straightforward, unpretentious approach to what can otherwise be a stressful process.</p><p>When he's not working, you'll likely find Justin on an evening walk through the neighborhood with his dogs, Luke Duke and Rosco.</p>
+                <div class="awards-block fade-in" aria-label="Credentials">
+                    <div class="awards-label">Credentials &amp; Designations</div>
+                    <ul class="awards-chips"><li class="award-chip">Top Producer</li><li class="award-chip">Associate Broker</li></ul>
+                </div>
+    </div>
+
+    <footer>
+        <div class="footer-brand">Justin Hart · Seabolt Real Estate</div>
+        <p>Equal Housing Opportunity</p>
+        <p class="footer-disclaimer">Content on this site is created with AI assistance and reviewed by Justin Hart.</p>
+        <div class="footer-links">
+            <a href="./">Home</a>
+            <a href="about">About</a>
+            <a href="blog">Blog</a>
+            <a href="contact">Contact</a>
+            <a href="https://withnotable.ai" target="_blank" rel="noopener noreferrer">Powered by withNotable</a>
+        </div>
+    </footer>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (nav) nav.classList.toggle('scrolled', window.scrollY > 50);
+        });
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        if (navToggle && navLinks) {
+            navToggle.addEventListener('click', () => { navLinks.classList.toggle('mobile-open'); navToggle.classList.toggle('active'); });
+        }
+        document.querySelectorAll('.faq-question').forEach(q => {
+            q.addEventListener('click', () => {
+                const item = q.parentElement;
+                const wasOpen = item.classList.contains('open');
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+                if (!wasOpen) item.classList.add('open');
+            });
+        });
+    </script>
+</body>
+</html>
